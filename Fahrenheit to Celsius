@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    float ftc;
+    float f=40;
+    ftc=((f-32.0)*5.0/9.0);
+    printf("Temperature in Degree Celsius =%.2f",ftc);
+    
+  return 0;  
+}

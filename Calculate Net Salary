@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+   float bp,ns,bonus,ta;
+   scanf("%f",&bp);
+   if(bp>=0&&bp<=10000)
+   {
+       bonus=2.0/100.0*bp;
+       ta=1.0/100.0*bp;
+       ns=bp+bonus+ta;
+       printf("%f",ns);
+   }
+   else if(bp>=10001&&bp<=25000)
+   {
+       bonus=5.0/100.0*bp;
+       ta=2.0/100.0*bp;
+       ns=bp+bonus+ta;
+       printf("%f",ns);
+   }
+   else if(bp>=25000&&bp<=50000)
+   {
+      bonus=10.0/100.0*bp;
+      ta=3.0/100.0*bp;
+      ns=bp+bonus+ta;
+      printf("%f",ns);
+   }
+   else if(bp>=50001&&bp<=100000)
+   {
+       bonus=15.0/100.0*bp;
+       ta=5.0/100.0*bp;
+       ns=bonus+bp+ta;
+       printf("%f",ns);
+   }
+   else if(bp>100000)
+   {
+       bonus=20.0/100.0*bp;
+       ta=5.0/100.0*bp;
+       ns=bp+bonus+ta;
+       printf("%f",ns);
+   }
+   return 0;
+}
